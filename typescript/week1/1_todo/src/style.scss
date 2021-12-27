@@ -1,0 +1,106 @@
+$point-color: rgb(219, 235, 220);
+$sub-color: rgb(97, 167, 64);
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: #1f1f1f;
+    font: {
+        family: 'Noto Sans KR', sans-serif;
+        weight: 300;
+    }
+    button {
+        background: none;
+        border: none;
+    }
+}
+.wrap {
+    border : {
+        color: #ddd;
+        style: solid;
+        width: 1px;
+        radius: 10px;
+    }
+    max-width: 500px;
+    margin:100px auto 0;
+    overflow: hidden;
+    &_header {
+        padding:20px;
+        background: $point-color;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &__text {
+            font-weight: 700;
+        }
+        &__button {
+            i {
+                display: block;
+                font-size: 30px;
+            }
+        }
+    }
+    &_box {
+        padding: 10px 20px;
+        &__list {
+            &-header {
+                padding:10px 0;
+                font: {
+                    size: 20px;
+                    weight: 500;
+                }
+            }
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            height: 50px;
+            box-sizing: border-box;
+        }
+        &__text {
+            width: calc(100% - 60px);
+        }
+        &__ico {
+            color: $point-color;
+            margin-right: 10px;
+            display: block;
+        }
+        &__button {
+            display: block;
+            padding: 5px;
+            background: $point-color;
+        }
+    }
+
+    &_box-done {
+        padding: 10px 20px;
+        &__list {
+            &-header {
+                padding:10px 0;
+                font: {
+                    size: 20px;
+                    weight: 500;
+                }
+            }
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+        &__text {
+            width: calc(100% - 60px);
+        }
+        &__ico {
+            color: $sub-color;
+            margin-right: 10px;
+            display: block;
+        }
+        &__button {
+            display: block;
+            padding: 5px;
+            background: $point-color;;
+        }
+    }
+}

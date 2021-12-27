@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  color: #1f1f1f;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 300;
+}
+
+* button {
+  background: none;
+  border: none;
+}
+
+.wrap {
+  border-color: #ddd;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 10px;
+  max-width: 500px;
+  margin: 100px auto 0;
+  overflow: hidden;
+}
+
+.wrap_header {
+  padding: 20px;
+  background: #dbebdc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrap_header__text {
+  font-weight: 700;
+}
+
+.wrap_header__button i {
+  display: block;
+  font-size: 30px;
+}
+
+.wrap_box {
+  padding: 10px 20px;
+}
+
+.wrap_box__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  height: 50px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.wrap_box__list-header {
+  padding: 10px 0;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.wrap_box__text {
+  width: calc(100% - 60px);
+}
+
+.wrap_box__ico {
+  color: #dbebdc;
+  margin-right: 10px;
+  display: block;
+}
+
+.wrap_box__button {
+  display: block;
+  padding: 5px;
+  background: #dbebdc;
+}
+
+.wrap_box-done {
+  padding: 10px 20px;
+}
+
+.wrap_box-done__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+}
+
+.wrap_box-done__list-header {
+  padding: 10px 0;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.wrap_box-done__text {
+  width: calc(100% - 60px);
+}
+
+.wrap_box-done__ico {
+  color: #61a740;
+  margin-right: 10px;
+  display: block;
+}
+
+.wrap_box-done__button {
+  display: block;
+  padding: 5px;
+  background: #dbebdc;
+}
+/*# sourceMappingURL=style.css.map */
