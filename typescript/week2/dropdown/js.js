@@ -1,3 +1,4 @@
+;
 var emails = [
     {
         value: 'naver.com',
@@ -26,13 +27,6 @@ var products = [
         selected: false
     }
 ];
-var creatDropdownItem = function (item) {
-    var option = document.createElement('option');
-    option.value = item.value.toString();
-    option.innerText = item.value.toString();
-    option.selected = item.selected;
-    return option;
-};
 emails.forEach(function (email) {
     var item = creatDropdownItem(email);
     var selectTag = document.querySelector('#eamil');
@@ -43,3 +37,10 @@ products.forEach(function (product) {
     var selectTag = document.querySelector('#product');
     selectTag.appendChild(item);
 });
+var creatDropdownItem = function (item) {
+    var option = document.createElement('option');
+    option.value = item.value.toString();
+    option.innerText = item.value.toString();
+    option.selected = item.selected;
+    return option;
+};
