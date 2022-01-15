@@ -1,5 +1,12 @@
 # Hello, Next.js
 
+### npm 
+```
+npm init
+npm i next
+npm i prop-types
+```
+
 ### dependencies
 ```json
 {
