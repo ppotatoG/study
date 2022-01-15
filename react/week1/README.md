@@ -1,4 +1,4 @@
-# Hello, Next.js
+# week1
 
 ### npm 
 ```
@@ -47,12 +47,11 @@ npm i prop-types
 
 [SASS BEM](https://nykim.work/15)
 
+[다양한 방식의 리액트 컴포넌트 스타일링 방식](https://velog.io/@velopert/react-component-styling)
+
 ### server 
 
 ```
-$ cd ppotatoG.github.io
-$ gem install jekyll bundler
-$ jekyll new ./
 $ bundle install
 $ bundle exec jekyll serve
 ```
