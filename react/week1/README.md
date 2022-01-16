@@ -1,10 +1,14 @@
 # week1
 
 ### npm 
+`-D` 개발자용?
 ```
 npm init
 npm i next
 npm i prop-types
+npm i eslint -D
+npm i eslint-plugin-import -D
+npm i eslint-plugin-react-hooks -D
 ```
 
 ### dependencies
