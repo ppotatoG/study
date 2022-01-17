@@ -64,7 +64,17 @@ npm i antd styled-components @ant-design/icons
 페이지들 중 공통으로 사용되는것들을.. 처리... 일괄?? 공통사용??
 
 ### expected a string or class/function
+
 ```
 Server Error
 Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
 ```
+
+[expected a string or class/function 리액트 에러](https://velog.io/@sunysty/%EB%A6%AC%EC%95%A1%ED%8A%B8-%EC%97%90%EB%9F%AC)
+
+### `_app.js` 전부 다 공통
+
+### `AppLayout` 일부만 공통
+
+### `useState` is not defined
+![Server Error](../img/220117.png)  
