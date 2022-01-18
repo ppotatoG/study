@@ -22,7 +22,7 @@ npm ERR! A complete log of this run can be found in:
 npm ERR!     C:\Users\User\AppData\Roaming\npm-cache\_logs\2022-01-15T07_51_58_087Z-debug.log
 ```
 
-### [Cannot read properties of null (reading 'pickAlgorithm')](https://stackoverflow.com/questions/69567381/getting-cannot-read-property-pickalgorithm-of-null-error-in-react-native)
+## [Cannot read properties of null (reading 'pickAlgorithm')](https://stackoverflow.com/questions/69567381/getting-cannot-read-property-pickalgorithm-of-null-error-in-react-native)
 
 `npm i next@9`시 error
 ```
@@ -51,7 +51,7 @@ npm cache clear --force
 
 --- 
 
-### npm 
+## npm 
 
 ```
 npm i antd styled-components @ant-design/icons
@@ -59,11 +59,11 @@ npm i antd styled-components @ant-design/icons
 
 [ant.design](https://ant.design/)
 
-### _app 
+## _app 
 
 페이지들 중 공통으로 사용되는것들을.. 처리... 일괄?? 공통사용??
 
-### expected a string or class/function
+## expected a string or class/function
 
 ```
 Server Error
@@ -76,5 +76,13 @@ Error: Element type is invalid: expected a string (for built-in components) or a
 
 ### `AppLayout` 일부만 공통
 
-### `useState` is not defined
+## `useState` is not defined
 ![Server Error](../img/220117.png)  
+
+import useState 로 해결
+
+```
+import React, {useState, useCallback, useMemo} from 'react';
+```
+
+## TypeError: Cannot read properties of undefined (reading 'REACT_APP_SC_ATTR')
