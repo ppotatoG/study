@@ -86,3 +86,33 @@ import React, {useState, useCallback, useMemo} from 'react';
 ```
 
 ## TypeError: Cannot read properties of undefined (reading 'REACT_APP_SC_ATTR')
+
+[인프런 질문하기](https://www.inflearn.com/questions/406378?re_comment_id=162512)
+
+
+이거 해도 안됨
+
+```js
+const SearchInput = styled(Input.Search)`
+    verticalAlign: 'middle';
+`;
+```
+```js
+const SearchInput = styled(Input.Search)`
+   vertical-align: middle;
+`;
+```
+
+`styled-components`랑 연관된거 싹 다 지우니까 돌아감
+
+
+### 1. styled 형식 변경, 에러 그대로
+
+### 2. json 다른사람걸로 다시 install했는데 여전함
+
+### 3. 띄어쓰기에 따라 에러 문구가 달라짐?
+- json "styled-components": "^5.2.0" 버전 맞추니까 에러 문구 동일해짐....??
+
+### 4. npm add -D babel-plugin-styled-components?
+
+[next.js styled-componsnts 스타일 적용 전에 렌더되는 에러 해결법](https://kyounghwan01.github.io/blog/React/next/styled-components-render-error/)
