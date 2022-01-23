@@ -116,3 +116,42 @@ const SearchInput = styled(Input.Search)`
 ### 4. npm add -D babel-plugin-styled-components?
 
 [next.js styled-componsnts 스타일 적용 전에 렌더되는 에러 해결법](https://kyounghwan01.github.io/blog/React/next/styled-components-render-error/)
+
+
+## 함수안에 파라미터 넘기기
+
+```js
+const LoginForm = ({setIsLoggedIn}) => {
+    // code
+}
+```
+
+```js
+const LoginForm = (setIsLoggedIn) => {
+    // code
+}
+```
+
+## 외워야 할 것
+
+1. SSR VS CSR
+2. NEXT 동작 원리
+3. 코드 스플리팅 흐름(데이터, 요청 흐름)
+
+### Failed to compile
+
+```
+./pages/signup.js
+Error: error: Duplicate binding
+  
+   |
+17 |     const onChangePasswordCheck = useCallback((e) => {
+   |           ^^^^^^^^^^^^^^^^^^^^^
+   |
+note: onChangePasswordCheck was declared at here
+  
+   |
+15 |     const [passwordCheck, onChangePasswordCheck] = useState('');
+   |                           ^^^^^^^^^^^^^^
+```
+This error occurred during the build process and can only be dismissed by fixing the error.
