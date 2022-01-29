@@ -5,6 +5,7 @@ redux-wrapper(**version 6**)
 ```
 $ npm i next-redux-wrapper
 $ npm i react-redux
+$ npm i redux-devtools-extension
 ```
 
 ## rootReducer
@@ -29,3 +30,8 @@ store\configureStore.js (7:30) @ configureStore
   10 | 
 ```
 Show collapsed frames
+
+```js
+import { reducer } from '../reducers';
+import reducer from '../reducers';
+```
