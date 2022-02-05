@@ -1,7 +1,9 @@
-# week1
+# Hello, Next.js
+
+## 강의 내용 
 
 ### npm 
-`-D` 개발자용?
+
 ```
 npm init
 npm i next
@@ -11,7 +13,15 @@ npm i eslint-plugin-import -D
 npm i eslint-plugin-react-hooks -D
 ```
 
-### dependencies
+## 문제
+
+### 같은 커맨드, 다른 dependencies
+
+<details>
+<summary>2주차에 node_modules 전부 지우고 다시 install</summary>
+
+<div markdown="1">
+
 ```json
 {
   "name": "react-nodebird-front",
@@ -47,20 +57,16 @@ npm i eslint-plugin-react-hooks -D
 }
 ```
 
-### 컴포넌트
+</div>
 
-[SASS BEM](https://nykim.work/15)
-
-[다양한 방식의 리액트 컴포넌트 스타일링 방식](https://velog.io/@velopert/react-component-styling)
-
-### server 
-
-```
-$ bundle install
-$ bundle exec jekyll serve
-```
+</details>
 
 ### npm prop-types
+
+<details>
+<summary>오타 확인 후 해결 ( •́ ̯•̀ )</summary>
+
+<div markdown="1">
 
 ```
 PS D:\2021\NodeBirdSNS\front> npm i prop-types
@@ -90,10 +96,33 @@ npm ERR! See C:\Users\User\AppData\Local\npm-cache\eresolve-report.txt for a ful
 npm ERR! A complete log of this run can be found in:
 npm ERR!     C:\Users\User\AppData\Local\npm-cache\_logs\2022-01-10T14_00_24_612Z-debug-0.log
 ```
-
 ```
 $ npm install --save prop-types
 ```
 ```
 $ npm prop-types --force
+```
+</div>
+</details>
+
+
+---
+
+### 컴포넌트 스타일링
+
+scss와 BEM을 활용한 react component style
+
+[SASS BEM](https://nykim.work/15)
+
+[다양한 방식의 리액트 컴포넌트 스타일링 방식](https://velog.io/@velopert/react-component-styling)
+
+## 나중에 알아볼 내용
+
+### server 
+
+npm server, jekyll server 실행 시 같은 주소?
+
+```
+$ bundle install
+$ bundle exec jekyll serve
 ```
