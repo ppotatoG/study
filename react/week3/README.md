@@ -1,6 +1,9 @@
-# antd 사용해 SNS 화면 만들기
+# Redux 연동하기
+> 리덕스 설치와 필요성 소개 ~ 리듀서 쪼개기
 
-## npm
+## 강의 내용
+
+### npm
 redux-wrapper(**version 6**)
 ```
 $ npm i next-redux-wrapper
@@ -8,11 +11,18 @@ $ npm i react-redux
 $ npm i redux-devtools-extension
 ```
 
-## rootReducer
+### rootReducer
 
 (이전상태, 액션) => 다음상태
 
-## Expected the root reducer to be a function. Instead, received: 'undefined'
+## 문제 
+
+### Expected the root reducer to be a function. Instead, received: 'undefined'
+
+<details>
+<summary>괄호 추가</summary>
+
+<div markdown="1">
 Server Error
 Error: Expected the root reducer to be a function. Instead, received: 'undefined'
 
@@ -35,10 +45,17 @@ Show collapsed frames
 import { reducer } from '../reducers';
 import reducer from '../reducers';
 ```
+</div>
+</details>
 
-## vsc eslint 빨간줄 해결
+### vsc eslint 빨간줄 해결
 
-### (JSX attribute) style?: React.CSSProperties
+<details>
+<summary>eslint 변경</summary>
+
+<div markdown="1">
+
+#### (JSX attribute) style?: React.CSSProperties
 ```
 'React' must be in scope when using JSXeslintreact/react-in-jsx-scope
 (JSX attribute) style?: React.CSSProperties
@@ -52,7 +69,7 @@ import reducer from '../reducers';
 }
 ```
 
-### ts(6133)
+#### ts(6133)
 ```
 'onSubmit'이(가) 선언은 되었지만 해당 값이 읽히지는 않았습니다.ts(6133)
 'onSubmit' is assigned a value but never used.eslintno-unused-vars
@@ -65,7 +82,16 @@ import reducer from '../reducers';
 }
 ```
 
-## imagePaths error
+</div>
+</details>
+
+
+### imagePaths error
+
+<details>
+<summary>4주차까지 해결 못함</summary>
+
+<div markdown="1">
 
 Unhandled Runtime Error
 TypeError: Cannot read properties of undefined (reading 'map')
@@ -84,7 +110,15 @@ Source
    50 |                         <div>
   ```
 
-## imageInput
+</div>
+</details>
+
+### imageInput
+
+<details>
+<summary>4주차까지 해결 못함</summary>
+
+<div markdown="1">
 
 Unhandled Runtime Error
 TypeError: imageInput.current.click is not a function
@@ -101,3 +135,6 @@ components\PostForm.js (23:27) @ eval
   25 | 
   26 |     return (
 ```
+
+</div>
+</details>
