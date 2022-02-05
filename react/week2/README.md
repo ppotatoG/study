@@ -1,8 +1,48 @@
 # antd 사용해 SNS 화면 만들기
 
-## 1주차 에러 해결
+## 강의 내용
 
-### npm downgrade
+### npm 
+
+[ant.design](https://ant.design/)
+
+```
+npm i antd styled-components @ant-design/icons
+```
+
+### _app.js VS AppLayout
+
+`_app.js` 전부 다 공통  `AppLayout` 일부만 공통
+
+### 함수안에 파라미터 넘기기
+
+```js
+const LoginForm = ({setIsLoggedIn}) => {
+    // code
+}
+```
+
+```js
+const LoginForm = (setIsLoggedIn) => {
+    // code
+}
+```
+### 외워야 할 것
+
+1. SSR VS CSR
+2. NEXT 동작 원리
+3. 코드 스플리팅 흐름(데이터, 요청 흐름)
+
+## 문제 
+
+### npm, next install error
+
+<details>
+<summary>12버전으로 사용</summary>
+
+<div markdown="1">
+
+#### npm downgrade
 
 node v12.17.0
 - v16.13.1
@@ -22,7 +62,7 @@ npm ERR! A complete log of this run can be found in:
 npm ERR!     C:\Users\User\AppData\Roaming\npm-cache\_logs\2022-01-15T07_51_58_087Z-debug.log
 ```
 
-## [Cannot read properties of null (reading 'pickAlgorithm')](https://stackoverflow.com/questions/69567381/getting-cannot-read-property-pickalgorithm-of-null-error-in-react-native)
+#### [Cannot read properties of null (reading 'pickAlgorithm')](https://stackoverflow.com/questions/69567381/getting-cannot-read-property-pickalgorithm-of-null-error-in-react-native)
 
 `npm i next@9`시 error
 ```
@@ -49,21 +89,15 @@ npm ERR!     C:\Users\User\AppData\Local\npm-cache\_logs\2022-01-15T08_01_14_535
 npm cache clear --force
 ```
 
---- 
+</div>
+</details>
 
-## npm 
+### expected a string or class/function
 
-```
-npm i antd styled-components @ant-design/icons
-```
+<details>
+<summary>파일명 변경</summary>
 
-[ant.design](https://ant.design/)
-
-## _app 
-
-페이지들 중 공통으로 사용되는것들을.. 처리... 일괄?? 공통사용??
-
-## expected a string or class/function
+<div markdown="1">
 
 ```
 Server Error
@@ -71,21 +105,31 @@ Error: Element type is invalid: expected a string (for built-in components) or a
 ```
 
 [expected a string or class/function 리액트 에러](https://velog.io/@sunysty/%EB%A6%AC%EC%95%A1%ED%8A%B8-%EC%97%90%EB%9F%AC)
+</div>
+</details>
 
-### `_app.js` 전부 다 공통
+### useState is not defined
 
-### `AppLayout` 일부만 공통
+<details>
+<summary>import useState</summary>
 
-## `useState` is not defined
+<div markdown="1">
+
 ![Server Error](../img/220117.png)  
-
-import useState 로 해결
 
 ```
 import React, {useState, useCallback, useMemo} from 'react';
 ```
 
-## TypeError: Cannot read properties of undefined (reading 'REACT_APP_SC_ATTR')
+</div>
+</details>
+
+### TypeError: Cannot read properties of undefined (reading 'REACT_APP_SC_ATTR')
+
+<details>
+<summary>styled-components 사용 안하기로..</summary>
+
+<div markdown="1">
 
 [인프런 질문하기](https://www.inflearn.com/questions/406378?re_comment_id=162512)
 
@@ -105,40 +149,26 @@ const SearchInput = styled(Input.Search)`
 
 `styled-components`랑 연관된거 싹 다 지우니까 돌아감
 
+#### 1. styled 형식 변경, 에러 그대로
 
-### 1. styled 형식 변경, 에러 그대로
+#### 2. json 다른사람걸로 다시 install했는데 여전함
 
-### 2. json 다른사람걸로 다시 install했는데 여전함
-
-### 3. 띄어쓰기에 따라 에러 문구가 달라짐?
+#### 3. 띄어쓰기에 따라 에러 문구가 달라짐?
 - json "styled-components": "^5.2.0" 버전 맞추니까 에러 문구 동일해짐....??
 
-### 4. npm add -D babel-plugin-styled-components?
+#### 4. npm add -D babel-plugin-styled-components?
 
 [next.js styled-componsnts 스타일 적용 전에 렌더되는 에러 해결법](https://kyounghwan01.github.io/blog/React/next/styled-components-render-error/)
 
-
-## 함수안에 파라미터 넘기기
-
-```js
-const LoginForm = ({setIsLoggedIn}) => {
-    // code
-}
-```
-
-```js
-const LoginForm = (setIsLoggedIn) => {
-    // code
-}
-```
-
-## 외워야 할 것
-
-1. SSR VS CSR
-2. NEXT 동작 원리
-3. 코드 스플리팅 흐름(데이터, 요청 흐름)
+</div>
+</details>
 
 ### Failed to compile
+
+<details>
+<summary>오타였던걸로 기억 ๑°⌓°๑</summary>
+
+<div markdown="1">
 
 ```
 ./pages/signup.js
@@ -155,3 +185,6 @@ note: onChangePasswordCheck was declared at here
    |                           ^^^^^^^^^^^^^^
 ```
 This error occurred during the build process and can only be dismissed by fixing the error.
+
+</div>
+</details>
