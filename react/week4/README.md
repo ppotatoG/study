@@ -88,3 +88,16 @@ import CommentForm from './CommentForm';
 
 </div>
 </details>
+
+### 사진 더보기 클릭 시 이벤트 없음
+
+<details>
+<summary></summary>
+
+<div markdown="1">
+
+```js
+```
+
+</div>
+</details>
