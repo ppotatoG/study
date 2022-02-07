@@ -8,6 +8,10 @@
 $ npm i react-slick
 ```
 
+### 정규식 Playground
+
+[regexr.com](https://regexr.com/)
+
 ## 문제 
 
 ### 더미데이터 안그려짐
@@ -92,11 +96,16 @@ import CommentForm from './CommentForm';
 ### 사진 더보기 클릭 시 이벤트 없음
 
 <details>
-<summary></summary>
+<summary>괄호 추가</summary>
 
 <div markdown="1">
 
 ```js
+const ImagesZoom = ( images, onClose ) => {
+```
+
+```js
+const ImagesZoom = ({ images, onClose }) => {
 ```
 
 </div>
