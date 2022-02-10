@@ -89,7 +89,7 @@ import reducer from '../reducers';
 ### imagePaths error
 
 <details>
-<summary>4주차까지 해결 못함</summary>
+<summary>오타수정</summary>
 
 <div markdown="1">
 
@@ -110,13 +110,18 @@ Source
    50 |                         <div>
   ```
 
+
+reducers/post.js `ImagePaths`
+
+components\PostForm.js `imagePaths`
+
 </div>
 </details>
 
 ### imageInput
 
 <details>
-<summary>4주차까지 해결 못함</summary>
+<summary>오타수정</summary>
 
 <div markdown="1">
 
@@ -136,5 +141,10 @@ components\PostForm.js (23:27) @ eval
   26 |     return (
 ```
 
+`<Input/>`은 'antd'컴포넌트
+```js
+<Input type="file" multiple hidden ref={imageInput} />
+<input type="file" multiple hidden ref={imageInput} />
+```
 </div>
 </details>
