@@ -10,6 +10,7 @@ $ npm i -D eslint-plugin-react-hooks
 $ npm i -D eslint-plugin-jsx-a11y
 $ npm i shortid
 $ npm i immer
+$ npm i faker
 ```
 
 ### `while take` 동기
@@ -58,3 +59,26 @@ $ npm install --save-dev eslint-config-prettier
 ```
 
 [[ESLint & Prettier] expected indentation of 2 spaces but found 4.](https://interacting.tistory.com/143)
+
+### npm audit fix --force?
+
+```
+PS D:\작업\sohyun\NodeBirdSNS\front> npm i faker
+
+up to date, audited 523 packages in 2s
+
+81 packages are looking for funding
+  run `npm fund` for details
+
+4 vulnerabilities (2 moderate, 2 high)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+```
+
+### antd 
