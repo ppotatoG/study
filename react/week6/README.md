@@ -58,3 +58,11 @@ $ npm install --save-dev eslint-config-prettier
 ```
 
 [[ESLint & Prettier] expected indentation of 2 spaces but found 4.](https://interacting.tistory.com/143)
+
+### antd
+
+```js
+import 'antd/dist/antd.css';
+```
+
+### 이미지 안그려짐
