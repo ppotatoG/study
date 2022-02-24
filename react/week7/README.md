@@ -64,3 +64,16 @@ module.exports = router;
 ```
 
 ### [7.2 MySQL 설치하기](https://thebook.io/080229/ch07/02/)
+
+1. Choosing a setup Type - Custom
+2. Select Products
+- - MySQL Server (8.0.28 - X64)
+- - MySQL Workbench (8.0.28 - X64)
+
+- 웹에 없는 내용은 그냥 넘어감
+- 비밀번호 1234 가능
+- add user로 다른 환경에서 같은 mysql사용 가능
+- mysql port num !== node port num
+
+
+### Error: listen EADDRINUSE: address already in use :::3065
