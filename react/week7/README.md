@@ -7,6 +7,11 @@
 ```
 $ npm init
 $ npm i express
+$ npm i sequelize
+$ npm i sequelize-cli
+$ npm i mysql2
+
+$ npx sequelize init
 ```
 
 ### node 실행하기
@@ -75,5 +80,58 @@ module.exports = router;
 - add user로 다른 환경에서 같은 mysql사용 가능
 - mysql port num !== node port num
 
-
 ### Error: listen EADDRINUSE: address already in use :::3065
+
+### mysql ↔ sequelize
+
+#### type
+- STRING
+- BOLLEAN
+- TEXT
+- INTEGER
+...
+
+#### allowNull
+
+- 필수 false
+- 선택 true
+
+#### unique
+- 고유값 true
+
+```js
+module.exports = (sequelize, DataTypes) => {
+
+  // mysql 내부에 users 테이블 생성
+    const User = sequelize.define('User', {
+        // id 기본으로 들어가있음
+        email: {
+            // 테이블 생성 시 값에 대한 정보
+            type : DataTypes.STRING(30),
+            allowNull: false,
+            unique: true
+        },
+        nickname: {
+            type : DataTypes.STRING(30),
+            allowNull: false,
+        },
+        password: {
+            type : DataTypes.STRING(100),
+            allowNull: false,
+        }
+    }, {
+        // 한글 입력 가능
+        charset: 'utf8',
+        collate: 'utf8_general_ci'
+
+        // 한글 + 이모티콘 입력 가능
+        // charset: 'utf8mb4',
+        // collate: 'utf8mb4_general_ci' 
+        
+    });
+
+    User.associate = (db) => {};
+
+    return User;
+}
+```
