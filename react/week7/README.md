@@ -12,6 +12,9 @@ $ npm i sequelize-cli
 $ npm i mysql2
 
 $ npx sequelize init
+$ npx sequelize db:create
+
+$ npm i -D nodemon
 ```
 
 ### node 실행하기
@@ -135,3 +138,65 @@ module.exports = (sequelize, DataTypes) => {
     return User;
 }
 ```
+
+### hasMany VS belongsTo
+
+[hasMany와 belongsTo 차이점](https://c3epmos.tistory.com/59)
+
+### ERD
+
+[ERD 란 무엇이고 어떻게 사용할까?](https://mulmandu17.tistory.com/68)
+
+## 문제 
+
+### AssociationError [SequelizeAssociationError]: Post.belongsToMany(Post) 
+
+<details>
+<summary>갑자기 해결됨</summary>
+
+20분동안 reset, 구글링 하다가 나는 아무고토 안했는데 갑자기 됨
+
+https://github.com/ZeroCho/nodejs-book/issues/18
+
+<div markdown="1">
+
+```js
+D:\2021\NodeBirdSNS\back\node_modules\sequelize\lib\associations\belongs-to-many.js:35
+      throw new AssociationError(`${source.name}.belongsToMany(${target.name}) requires through option, pass either a string or a model`);
+      ^
+
+AssociationError [SequelizeAssociationError]: Post.belongsToMany(Post) requires through option, pass either a string or a model
+    at new BelongsToMany (D:\2021\NodeBirdSNS\back\node_modules\sequelize\lib\associations\belongs-to-many.js:35:13)
+    at Function.belongsToMany (D:\2021\NodeBirdSNS\back\node_modules\sequelize\lib\associations\mixin.js:43:25)
+    at Function.Hashtag.associate (D:\2021\NodeBirdSNS\back\models\hashtag.js:13:17)
+    at D:\2021\NodeBirdSNS\back\models\index.js:21:17
+    at Array.forEach (<anonymous>)
+    at Object.<anonymous> (D:\2021\NodeBirdSNS\back\models\index.js:19:17)
+    at Module._compile (node:internal/modules/cjs/loader:1101:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+```
+
+이번주차 npm 모두 실행
+
+init error,
+
+`--force`로 실행 시, 코드 사라짐??
+
+```
+PS D:\2021\NodeBirdSNS\back> npx sequelize init
+```
+
+```
+Sequelize CLI [Node: 16.13.1, CLI: 6.4.1, ORM: 6.17.0]
+
+
+ERROR: The file config\config.json already exists. Run command with --force to overwrite it. 
+```
+
+</div>
+</details>
+
+
+### mysql workbench에 테이블 안그려짐
