@@ -9,6 +9,9 @@ $ npm i bcrypt
 $ npm i cors
 $ npm i passport
 $ npm i passport-local
+$ npm i express-session
+$ npm i cookie-parser
+$ npm i dotenv
 ```
 
 ### error
