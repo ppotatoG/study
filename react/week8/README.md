@@ -1,5 +1,5 @@
 # 백엔드 노드 서버 구축하기
-> 회원가입 구현하기 ~
+> 회원가입 구현하기 ~ 로그인 문제 해결하기
 
 ## 강의 내용
 
@@ -25,4 +25,16 @@ $ npm i dotenv
 
 ```js
 res.setHeader('Accese-Control-Allow-Origin', '*');
-``
+```
+
+### db include
+
+```js
+attributes: ['id', 'nickname', 'email']
+```
+
+```js
+attributes: {
+    exclude: ['password']
+},
+```
