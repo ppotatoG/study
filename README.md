@@ -5,6 +5,6 @@
 
 ### [node-bird-sns(22/01/09 ~ 22/04/12)](https://github.com/ppotatoG/study/tree/master/node-bird-sns)
 
-### [cat-jjal-maker(22/05/02 ~ 22/05/17)](https://github.com/ppotatoG/study/tree/master/node-bird-sns)
+### [cat-jjal-maker(22/05/02 ~ 22/05/17)](https://github.com/ppotatoG/study/tree/master/cat-jjal-maker)
 
 ### [ggangLesson(22/06/17 ~ 22/05/17)](https://github.com/ppotatoG/ggangLesson)
