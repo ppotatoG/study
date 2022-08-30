@@ -4,3 +4,7 @@
 - 진행기간 : 22-01-09 ~ 22-04-12
 - 진행방식 : 각자 인프런강의 수강후 실습한내용발표
 - 목표 : 트위터와 유사한 SNS 제작 후 배포
+
+[NodeBirdSNS](https://github.com/ppotatoG/NodeBirdSNS)
+
+<img src="https://img.shields.io/badge/Next.js-000?style=flat-square&logo=Next.js&logoColor=white" /> <img src="https://img.shields.io/badge/Redux-764ABC?style=flat-square&logo=Redux&logoColor=white" /> <img src="https://img.shields.io/badge/Redux-Saga-999?style=flat-square&logo=Redux-Saga&logoColor=white" />
