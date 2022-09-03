@@ -7,4 +7,6 @@
 
 ### [cat-jjal-maker(22/05/02 ~ 22/05/17)](https://github.com/ppotatoG/study/tree/master/cat-jjal-maker)
 
-### [ggangLesson(22/06/17 ~ 22/05/17)](https://github.com/ppotatoG/ggangLesson)
+### [ggangLesson(22/06/17 ~ 22/08/30)](https://github.com/ppotatoG/ggangLesson)
+
+### [gatsby-blog(22/09/06 ~ 22/09/27)](https://github.com/ppotatoG/study/tree/master/gatsby-blog)
