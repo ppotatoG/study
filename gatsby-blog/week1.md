@@ -7,7 +7,7 @@ $ npm install -g gatsby-cli
 
 ## 2. 테마 선택
 [Gatsby Starter Library](https://www.gatsbyjs.com/starters/)
-
+[본인 사용 테마](https://www.gatsbyjs.com/starters/bagseye/koop-blog)
 
 ## 3. gatsby 실행
 ```
